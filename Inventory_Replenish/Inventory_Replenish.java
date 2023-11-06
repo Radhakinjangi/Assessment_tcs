@@ -44,7 +44,7 @@ public class Inventory_Replenish {
         List<Inventory> inventories = new ArrayList<>();
         int limit;
 
-        // Read values for four Inventory objects and the limit
+    
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 4; i++) {
             String inventoryId = scanner.next();
@@ -56,7 +56,7 @@ public class Inventory_Replenish {
 
         limit = scanner.nextInt();
 
-        // Call the replenish method using streams and print the status
+        
         List<Inventory> replenishedInventories = replenish(inventories, limit);
 
         for (Inventory inventory : replenishedInventories) {
